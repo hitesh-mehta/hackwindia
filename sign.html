@@ -24,13 +24,13 @@
       
                       <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4" style="font-size:4rem; ">Sign up</p>
       
-                      <form class="mx-1 mx-md-4">
+                      <form class="mx-1 mx-md-4" action="/signup" method="POST">
       
                         <div class="d-flex flex-row align-items-center mb-4">
                           <i class="fas fa-user fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0 form-group">
-                            <label class="form-label " for="form3Example1c name">Your Name</label>
-                            <input type="text" id="form3Example1c name" class="form-control name" required/>
+                            <label class="form-label " for="username" >Your Name</label>
+                            <input type="text" id="username" class="form-control" required/>
                             
                           </div>
                         </div>
@@ -38,8 +38,8 @@
                         <div class="d-flex flex-row align-items-center mb-4">
                           <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0 form-group">
-                            <label class="form-label" for="form3Example3c email">Your Email</label>
-                            <input type="email" id="form3Example3c email" class="form-control email" required />
+                            <label class="form-label" for="email">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required />
                            
                           </div>
                         </div>
@@ -47,28 +47,21 @@
                         <div class="d-flex flex-row align-items-center mb-4">
                           <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                           <div class="form-outline flex-fill mb-0 form-group">
-                            <label class="form-label" for="form3Example4c password">Password</label>
-                            <input type="password" id="form3Example4c password" class="form-control password" required/>
+                            <label class="form-label" for="password">Password</label>
+                            <input type="password" id="password" class="form-control" required/>
                             
                           </div>
                         </div>
       
-                        <div class="d-flex flex-row align-items-center mb-4">
-                          <i class="fas fa-key fa-lg me-3 fa-fw"></i>
-                          <div class="form-outline flex-fill mb-0 form-group">
-                            <label class="form-label" for="form3Example4cd">Confirm Password</label>
-                            <input type="password" id="form3Example4cd" class="form-control" required/>
-                            
-                          </div>
-                        </div>
-      
+                
+    
                         <div class="d-flex flex-row align-items-center mb-4">
                             <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                             <div class="form-outline flex-fill mb-0 form-group">
-                              <label class="form-label" for="form3Example3c address">Address</label>
+                              <label class="form-label" for="address">Address</label>
                               <!-- <input type="email" id="form3Example3c" class="form-control" /> -->
                              
-                            <textarea id="form3Example3c address" class="form-control address"name="address" rows="4" cols="50" required></textarea>
+                            <textarea id="address" class="form-control"name="address" rows="4" cols="50" name="address" required></textarea>
                              
                             </div>
                           </div>
@@ -81,7 +74,7 @@
                           
       
                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                          <button type="button" class="btn btn-primary btn-lg submit-btn">Sign up</button>
+                          <button type="submit" class="btn btn-primary btn-lg">Sign up</button>
                         </div>
       
                       </form>
@@ -89,7 +82,7 @@
                     </div>
                     <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2" style="margin-left:0px;" >
       
-                      <img src="assets/img/meow.png"
+                      <img src="e-waste-recycling-in-UAE-Logo-Vector.svg-.png"
                         class="img-fluid l-5" alt="Sample image" style="height: 60vh;padding-left: 80px;">
                         <!-- https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp -->
                         <!-- style="background-image:url('background.jpg')  ;background-size: cover;background-position: center center;" -->
